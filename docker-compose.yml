@@ -28,7 +28,7 @@ services:
       - '--collector.filesystem.mount-points-exclude'
       - '^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)'
   vue-app:
-    build: ./interaction_alert
+    image: vovamardanshin/alert_in:latest
     ports:
       - "5000:5000"
 volumes:
